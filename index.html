@@ -214,6 +214,24 @@
 				background: #0a0c10;
 			}
 
+			.thumb-label {
+				position: absolute;
+				inset: 0;
+				display: grid;
+				place-items: center;
+				color: var(--muted);
+				font-size: 0.9rem;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				background: linear-gradient(135deg, rgba(17, 21, 27, 0.9), rgba(8, 10, 13, 0.3));
+				transition: opacity 0.3s ease;
+				pointer-events: none;
+			}
+
+			.video-thumb.has-video .thumb-label {
+				opacity: 0;
+			}
+
 			.video-thumb video {
 				width: 100%;
 				height: 100%;
@@ -471,18 +489,19 @@
 				</div>
 
 				<div class="upload-note">
-					Upload guide: replace the MP4 URLs inside each <strong>data-video-src</strong> or
-					<strong>source</strong> tag. You can use direct uploads, YouTube, or Vimeo links. The
-					modal supports YouTube/Vimeo embeds automatically.
+					Upload guide: add your preview MP4 in each <strong>source</strong> tag and your
+					full video in <strong>data-video-src</strong>. Use direct uploads, YouTube, or Vimeo
+					links. The modal supports YouTube/Vimeo embeds automatically.
 				</div>
 
 				<div class="category">
 					<h3>Anime Edits</h3>
 					<div class="portfolio-grid">
-						<article class="video-card" data-video-src="https://cdn.coverr.co/videos/coverr-man-looking-at-the-sky-2060/1080p.mp4">
+						<article class="video-card" data-video-src="">
 							<div class="video-thumb">
-								<video muted loop preload="metadata" poster="https://images.pexels.com/photos/317157/pexels-photo-317157.jpeg">
-									<source src="https://cdn.coverr.co/videos/coverr-man-looking-at-the-sky-2060/1080p.mp4" type="video/mp4" />
+								<div class="thumb-label">Add preview</div>
+								<video muted loop preload="metadata">
+									<source src="" type="video/mp4" />
 								</video>
 							</div>
 							<div class="video-meta">
@@ -495,10 +514,11 @@
 							</div>
 						</article>
 
-						<article class="video-card" data-video-src="https://cdn.coverr.co/videos/coverr-silhouette-of-a-man-1607576104245/1080p.mp4">
+						<article class="video-card" data-video-src="">
 							<div class="video-thumb">
-								<video muted loop preload="metadata" poster="https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg">
-									<source src="https://cdn.coverr.co/videos/coverr-silhouette-of-a-man-1607576104245/1080p.mp4" type="video/mp4" />
+								<div class="thumb-label">Add preview</div>
+								<video muted loop preload="metadata">
+									<source src="" type="video/mp4" />
 								</video>
 							</div>
 							<div class="video-meta">
@@ -511,10 +531,11 @@
 							</div>
 						</article>
 
-						<article class="video-card" data-video-src="https://cdn.coverr.co/videos/coverr-clouds-4780/1080p.mp4">
+						<article class="video-card" data-video-src="">
 							<div class="video-thumb">
-								<video muted loop preload="metadata" poster="https://images.pexels.com/photos/2835436/pexels-photo-2835436.jpeg">
-									<source src="https://cdn.coverr.co/videos/coverr-clouds-4780/1080p.mp4" type="video/mp4" />
+								<div class="thumb-label">Add preview</div>
+								<video muted loop preload="metadata">
+									<source src="" type="video/mp4" />
 								</video>
 							</div>
 							<div class="video-meta">
@@ -532,10 +553,11 @@
 				<div class="category">
 					<h3>Podcast Edits</h3>
 					<div class="portfolio-grid">
-						<article class="video-card" data-video-src="https://cdn.coverr.co/videos/coverr-woman-working-on-her-laptop-4616/1080p.mp4">
+						<article class="video-card" data-video-src="">
 							<div class="video-thumb">
-								<video muted loop preload="metadata" poster="https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg">
-									<source src="https://cdn.coverr.co/videos/coverr-woman-working-on-her-laptop-4616/1080p.mp4" type="video/mp4" />
+								<div class="thumb-label">Add preview</div>
+								<video muted loop preload="metadata">
+									<source src="" type="video/mp4" />
 								</video>
 							</div>
 							<div class="video-meta">
@@ -548,10 +570,11 @@
 							</div>
 						</article>
 
-						<article class="video-card" data-video-src="https://cdn.coverr.co/videos/coverr-typing-on-keyboard-1600/1080p.mp4">
+						<article class="video-card" data-video-src="">
 							<div class="video-thumb">
-								<video muted loop preload="metadata" poster="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg">
-									<source src="https://cdn.coverr.co/videos/coverr-typing-on-keyboard-1600/1080p.mp4" type="video/mp4" />
+								<div class="thumb-label">Add preview</div>
+								<video muted loop preload="metadata">
+									<source src="" type="video/mp4" />
 								</video>
 							</div>
 							<div class="video-meta">
@@ -564,10 +587,11 @@
 							</div>
 						</article>
 
-						<article class="video-card" data-video-src="https://cdn.coverr.co/videos/coverr-man-drinking-coffee-1528/1080p.mp4">
+						<article class="video-card" data-video-src="">
 							<div class="video-thumb">
-								<video muted loop preload="metadata" poster="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg">
-									<source src="https://cdn.coverr.co/videos/coverr-man-drinking-coffee-1528/1080p.mp4" type="video/mp4" />
+								<div class="thumb-label">Add preview</div>
+								<video muted loop preload="metadata">
+									<source src="" type="video/mp4" />
 								</video>
 							</div>
 							<div class="video-meta">
@@ -585,10 +609,11 @@
 				<div class="category">
 					<h3>Vlog Edits</h3>
 					<div class="portfolio-grid">
-						<article class="video-card" data-video-src="https://cdn.coverr.co/videos/coverr-chasing-sunlight-2566/1080p.mp4">
+						<article class="video-card" data-video-src="">
 							<div class="video-thumb">
-								<video muted loop preload="metadata" poster="https://images.pexels.com/photos/2387412/pexels-photo-2387412.jpeg">
-									<source src="https://cdn.coverr.co/videos/coverr-chasing-sunlight-2566/1080p.mp4" type="video/mp4" />
+								<div class="thumb-label">Add preview</div>
+								<video muted loop preload="metadata">
+									<source src="" type="video/mp4" />
 								</video>
 							</div>
 							<div class="video-meta">
@@ -601,10 +626,11 @@
 							</div>
 						</article>
 
-						<article class="video-card" data-video-src="https://cdn.coverr.co/videos/coverr-backpack-on-the-move-7593/1080p.mp4">
+						<article class="video-card" data-video-src="">
 							<div class="video-thumb">
-								<video muted loop preload="metadata" poster="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg">
-									<source src="https://cdn.coverr.co/videos/coverr-backpack-on-the-move-7593/1080p.mp4" type="video/mp4" />
+								<div class="thumb-label">Add preview</div>
+								<video muted loop preload="metadata">
+									<source src="" type="video/mp4" />
 								</video>
 							</div>
 							<div class="video-meta">
@@ -617,10 +643,11 @@
 							</div>
 						</article>
 
-						<article class="video-card" data-video-src="https://cdn.coverr.co/videos/coverr-man-working-at-a-cafe-4042/1080p.mp4">
+						<article class="video-card" data-video-src="">
 							<div class="video-thumb">
-								<video muted loop preload="metadata" poster="https://images.pexels.com/photos/3748221/pexels-photo-3748221.jpeg">
-									<source src="https://cdn.coverr.co/videos/coverr-man-working-at-a-cafe-4042/1080p.mp4" type="video/mp4" />
+								<div class="thumb-label">Add preview</div>
+								<video muted loop preload="metadata">
+									<source src="" type="video/mp4" />
 								</video>
 							</div>
 							<div class="video-meta">
@@ -745,6 +772,13 @@
 
 			document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
+			document.querySelectorAll(".video-thumb").forEach((thumb) => {
+				const source = thumb.querySelector("source");
+				if (source && source.getAttribute("src")) {
+					thumb.classList.add("has-video");
+				}
+			});
+
 			const getProvider = (url) => {
 				if (url.includes("youtube.com") || url.includes("youtu.be")) return "youtube";
 				if (url.includes("vimeo.com")) return "vimeo";
@@ -806,7 +840,11 @@
 				const preview = card.querySelector("video");
 				card.addEventListener("mouseenter", () => preview && preview.play());
 				card.addEventListener("mouseleave", () => preview && preview.pause());
-				card.addEventListener("click", () => openModal(card.dataset.videoSrc));
+				card.addEventListener("click", () => {
+					const src = card.dataset.videoSrc;
+					if (!src) return;
+					openModal(src);
+				});
 			});
 
 			const closeModal = () => {
